@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unblocked Games</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Game Panel</title>
+    <style>
+        :root {
+            --background-dark: #333333;
+            --text-light: #ffffff;
+            --button-background: #6200ea;
+            --button-text: #ffffff;
+        }
+
+        body {
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .panel-container {
+            text-align: center;
+        }
+
+        button {
+            background-color: var(--button-background);
+            color: var(--button-text);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
 </head>
-<body class="light-mode">
-    <header>
+<body>
+    <div class="panel-container">
         <h1>Unblocked Games</h1>
-        <button id="theme-toggle">Toggle Dark Mode</button>
-    </header>
-    <main>
-        <section class="game">
-            <h2>Game 1</h2>
-            <iframe src="https://example.com/game1" title="Game 1"></iframe>
-        </section>
-        <section class="game">
-            <h2>Game 2</h2>
-            <iframe src="https://example.com/game2" title="Game 2"></iframe>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Unblocked Games</p>
-    </footer>
-    <script src="script.js"></script>
+        <button onclick="window.location.href='game1.html'">Mario 64</button>
+        <button onclick="window.location.href='game2.html'">Game 2</button>
+        <button onclick="window.location.href='game3.html'">Game 3</button>
+        <!-- Add more buttons as needed -->
+    </div>
 </body>
 </html>
